@@ -6864,6 +6864,7 @@
 
             const letter = searchParams.get('letter');
             if (letter) {
+                letter = letter.toLowerCase();
                 matches = matches.filter(match => match[uniquePosition - 1] === letter);
             }
         }
